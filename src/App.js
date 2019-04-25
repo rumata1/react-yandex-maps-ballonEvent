@@ -4,30 +4,42 @@ import { YMaps, Map, GeoObject, Clusterer, Placemark, ObjectManager, withYMaps }
 const features = {
     "type": "FeatureCollection",
     "features": [
-        {"type": "Feature", "id": 0, "geometry": {"type": "Point", "coordinates": [55.831903, 37.411961]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p>1</p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [55.763338, 37.565466]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={this.test(this)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [55.763338, 37.565466]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [55.744522, 37.616378]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [55.780898, 37.642889]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 5, "geometry": {"type": "Point", "coordinates": [55.793559, 37.435983]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><button class='button' onclick=javascript:click()>changePm</button></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 6, "geometry": {"type": "Point", "coordinates": [55.800584, 37.675638]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 12, "geometry": {"type": "Point", "coordinates": [55.78085, 37.75021]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 20, "geometry": {"type": "Point", "coordinates": [55.698261, 37.730838]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 21, "geometry": {"type": "Point", "coordinates": [55.6338, 37.564769]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 22, "geometry": {"type": "Point", "coordinates": [55.639996, 37.5394]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 23, "geometry": {"type": "Point", "coordinates": [55.69023, 37.405853]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 24, "geometry": {"type": "Point", "coordinates": [55.77597, 37.5129]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 25, "geometry": {"type": "Point", "coordinates": [55.775777, 37.44218]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 26, "geometry": {"type": "Point", "coordinates": [55.811814, 37.440448]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 27, "geometry": {"type": "Point", "coordinates": [55.751841, 37.404853]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 28, "geometry": {"type": "Point", "coordinates": [55.627303, 37.728976]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 29, "geometry": {"type": "Point", "coordinates": [55.816515, 37.597163]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 30, "geometry": {"type": "Point", "coordinates": [55.664352, 37.689397]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 31, "geometry": {"type": "Point", "coordinates": [55.679195, 37.600961]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 32, "geometry": {"type": "Point", "coordinates": [55.673873, 37.658425]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 33, "geometry": {"type": "Point", "coordinates": [55.681006, 37.605126]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)}  type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 34, "geometry": {"type": "Point", "coordinates": [55.876327, 37.431744]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
-        {"type": "Feature", "id": 35, "geometry": {"type": "Point", "coordinates": [55.843363, 37.778445]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)} type='submit' value='Отправить'></p>", "balloonContentFooter": "<font size=1>Информация предоставлена: </font> <strong>этим балуном</strong>", "clusterCaption": "<strong><s>Еще</s> одна</strong> метка", "hintContent": "<strong>Текст  <s>подсказки</s></strong>"}},
+        {
+            "type": "Feature", 
+            "id": 0, 
+            "geometry": {"type": "Point", "coordinates": [55.831903, 37.411961]}, 
+            "properties": {
+                "balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", 
+                "balloonContentBody": "", 
+                "balloonContentFooter": "", 
+                "clusterCaption": "Метка",
+                "hintContent": ""
+            }
+        },
+        {"type": "Feature", "id": 1, "geometry": {"type": "Point", "coordinates": [55.763338, 37.565466]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 2, "geometry": {"type": "Point", "coordinates": [55.763338, 37.565466]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 3, "geometry": {"type": "Point", "coordinates": [55.744522, 37.616378]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 4, "geometry": {"type": "Point", "coordinates": [55.780898, 37.642889]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 5, "geometry": {"type": "Point", "coordinates": [55.793559, 37.435983]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p>" +
+        "<button id='button' class='button'>Test</button></p>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 6, "geometry": {"type": "Point", "coordinates": [55.800584, 37.675638]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 12, "geometry": {"type": "Point", "coordinates": [55.78085, 37.75021]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 20, "geometry": {"type": "Point", "coordinates": [55.698261, 37.730838]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 21, "geometry": {"type": "Point", "coordinates": [55.6338, 37.564769]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 22, "geometry": {"type": "Point", "coordinates": [55.639996, 37.5394]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 23, "geometry": {"type": "Point", "coordinates": [55.69023, 37.405853]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 24, "geometry": {"type": "Point", "coordinates": [55.77597, 37.5129]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 25, "geometry": {"type": "Point", "coordinates": [55.775777, 37.44218]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 26, "geometry": {"type": "Point", "coordinates": [55.811814, 37.440448]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 27, "geometry": {"type": "Point", "coordinates": [55.751841, 37.404853]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 28, "geometry": {"type": "Point", "coordinates": [55.627303, 37.728976]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 29, "geometry": {"type": "Point", "coordinates": [55.816515, 37.597163]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 30, "geometry": {"type": "Point", "coordinates": [55.664352, 37.689397]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 31, "geometry": {"type": "Point", "coordinates": [55.679195, 37.600961]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 32, "geometry": {"type": "Point", "coordinates": [55.673873, 37.658425]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 33, "geometry": {"type": "Point", "coordinates": [55.681006, 37.605126]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<p>Ваше имя: <input name='login'></p><p><em>Телефон в формате 2xxx-xxx:</em>  <input></p><p><input onclick={alert(1)}  type='submit' value='Выбрать метку'></p>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 34, "geometry": {"type": "Point", "coordinates": [55.876327, 37.431744]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
+        {"type": "Feature", "id": 35, "geometry": {"type": "Point", "coordinates": [55.843363, 37.778445]}, "properties": {"balloonContentHeader": "<font size=3><b><span>Метка</span></b></font>", "balloonContentBody": "<input type='submit' value='Выбрать метку'>", "balloonContentFooter": "", "clusterCaption": "Метка", "hintContent": ""}},
     ]
 };
 
@@ -37,6 +49,9 @@ class TemplateProvider extends React.Component {
     };
 
     componentDidMount() {
+        //     .addEventListener('click', (e)=>{
+        //     console.log(e);
+        // })
         this.setState({
             template: this.props.ymaps.templateLayoutFactory.createClass(
                 /*кастомный класс
@@ -49,6 +64,7 @@ class TemplateProvider extends React.Component {
                 '</a></li>',
                 '{% endfor %}',
                 '</ul>'].join('')*/
+
                 //затираем шаблон
                 ''
             )
@@ -75,9 +91,18 @@ class App extends Component {
 
     handleClick = (e) => {
         let _this = this;
-        console.log(e.originalEvent.currentTarget);
-        e.originalEvent.currentTarget.clusters.balloon.events.add('autopanbegin', (e)=>{
+        //console.log(e.originalEvent.currentTarget);
 
+        //id метки при клике
+        e.originalEvent.currentTarget.objects.balloon.events.add('click', (e)=> {
+            //console.log(e.originalEvent.target.balloon._objectIdWithOpenBalloon);
+            this.setState({
+                id: e.originalEvent.target.balloon._objectIdWithOpenBalloon
+            });
+        });
+
+
+        e.originalEvent.currentTarget.clusters.balloon.events.add('autopanbegin', (e)=>{
             let newState = e.get('target').state._data.activeObject.id;
             _this.setState({
                 id: newState
@@ -97,15 +122,16 @@ class App extends Component {
             });
         });
 
+        /*
         let objectId = e.get('objectId');
 
         this.setState({
             id: objectId
         });
+        */
     }
 
-    render(){
-        console.log(this.state);
+    render() {
         return (
             <div className="wrapper">
                 <header>
@@ -145,7 +171,7 @@ class App extends Component {
                                         'objectManager.addon.clustersBalloon',
                                         'geoObject.addon.balloon'
                                     ]}
-                                    onClick={(e)=>{this.handleClick(e)}}
+                                    onClick={(e)=>{this.handleClick.call(this,e)}}
                                 />
                             </Map>
                         )}
